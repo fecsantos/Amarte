@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   has_many :reviews
   has_many :paintings
+
+  validates :first_name, :last_name, :address, :phone, :email, presence: true
 end
